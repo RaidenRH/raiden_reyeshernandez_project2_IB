@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Canvas Background</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: auto; /* Enable scrolling */
+        }
+        canvas {
+            position: fixed; 
+            top: 0;
+            left: 0;
+            z-index: 1; /* Move canvas behind other content */
+        }
+        main {
+            display: flex;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+            gap: 20px;
+            padding: 20px;
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .flex-item-text, .flex-item-image {
+            flex: 1 1 300px;
+            flex-direction: row; /* Flex items take up equal width */
+        }
+        .caption {
+            font-style: italic;
+            color: #000000;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+</head>
+<body>
+    <canvas></canvas>
+
+    <main>
+        <section>
+            <div class="title-box">
+                <h1 class="title">Toggle Shapes</h1>
+            </div>
+            <div id="sketch-container"></div>
+            <div class="flex-item-text">
+                <h3>Project Description</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iusto praesentium officia sed magni maiores sapiente fugiat. Voluptatem, numquam ea deserunt fuga culpa molestias unde odio quasi. Et, sapiente perferendis.</p>
+            </div>
+            <div class="flex-item-text">
+                <h3>Instructions</h3>
+                <ol>
+                    <li>Move mouse along x-axis to scale circle.</li>
+                    <li>Move mouse along y-axis to scale circle.</li>
+                    <li>Then if the mouse is pressed the shape changes color.</li>
+                    <li>Yet another instruction goes here.</li>
+                </ol>
+            </div>
+            <div class="flex-item-image">
+                <h1 class="title">Toggle Shapes</h1>
+                <h3>Project Description</h3>
+                <p>The following is an animation in which the user is able to toggle between two shapes while changing the scale and color of them as the animation moves from left to right.</p
+                    
+                    <h3>Instructions</h3>
+                <ol>
+                    <li>Move mouse along x-axis to scale circle.</li>
+                    <li>Move mouse along y-axis to scale circle.</li>
+                    <li>Then if the mouse is pressed the shape changes color.</li>
+                    <li>If spacebar is pressed the shape changes</li>
+                </ol>
+                
+                </div>
+           
+           
+            <div class="flex-item-image">
+                <img src=image\1.jpg width="450" height="400">
+                
+                <p class="caption">First iteration Sketch</p>
+            </div>
+            <div class="flex-item-image">
+                <img src="image/2.jpg" width="400" height="400">
+                <p class="caption">Scale Sketch</p>
+            </div>
+            <div class="flex-item-text">
+                <h3>Early Experiments</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat incidunt tenetur dolorem esse error ipsum beatae soluta dicta, provident porro quos totam nisi asperiores quo repudiandae natus maxime voluptate quisquam rem culpa saepe repellat quidem voluptatum? Impedit assumenda voluptas dolor possimus eum recusandae harum soluta tempora aliquam ratione. Ipsam, tempora!</p>
+            </div>
+            <div class="flex-item-image">
+                <img src="image/3.jpg" width="400" height="400">
+                <p class="caption">Key Pressed Sketch</p>
+            </div>
+            <div class="flex-item-image">
+                <img src="image/4.jpg" width="400" height="400">
+                <p class="caption">Color Change Sketch</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="sketch.js"></script>
+</body>
+</html>
+
+
